@@ -1,0 +1,8 @@
+.footer__menu li {
+    width: 100%;
+    background-color: var(--colorRojo);
+    text-transform: uppercase; /* mayuscula a */
+    text-align: center; /* centro las a */
+    padding: 10px 0;  /* margen a las li */
+    border-bottom: solid 2px white; /* borde inferiorde cada li */
+  }

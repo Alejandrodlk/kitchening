@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+}
+
+.header__logo {
+    border-radius: 50%;
+    border: solid 1px var(--colorGrisClaro); /* borde solido, grosor 1 px,  */
+    width: 180px;
+    height: 180px;
+    background-image: url("/images/logo.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 15px auto 30px;
+}
+
+.header__burger {
+  width: 50px;
+  padding: 5px; 
+  font-size: 32px;
+  background-color: var(--colorGrisOscuro);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto 30px;
+  display: block;
+} 
+
+.header__menu li {
+  width: 100%;
+  background-color: var(--colorGrisOscuro);
+  text-transform: uppercase; /* mayuscula a */
+  text-align: center; /* centro las a */
+  padding: 10px 0;  /* margen a las li */
+  border-bottom: solid 2px white; /* borde inferiorde cada li */
+}
+
+@media (min-width : 460px){
+  .header__menu li {
+    background-color: var(--colorRojo);
+   
+  }
+}
