@@ -34,9 +34,36 @@ header {
   border-bottom: solid 2px white; /* borde inferiorde cada li */
 }
 
+
+/* Tablet */
 @media (min-width : 460px){
-  .header__menu li {
-    background-color: var(--colorRojo);
-   
+
+  .header__burger {
+    display: none;
+  } 
+
+  .header__menu ul{
+    overflow: hidden; /* darle un limite al float */
   }
+
+  .header__menu li {
+    width: 15.5%;
+    font-size: 0.6rem; /* medidas relativas */
+    float: left;
+    margin-right: 1.4%;
+  }
+
+  .header__menu li:last-child{ /* sacar el margen al ultimo elemento "last-child" */
+    margin-right: 0;
+  }
+}
+
+
+/* Laptop */
+@media (min-width : 768px){
+
+  .header__menu li {
+    font-size: 1rem; /* medidas relativas */
+  }
+
 }

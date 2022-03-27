@@ -56,3 +56,36 @@ left: 0px;
     background-color: var(--colorGrisOscuro);
     
 }
+
+/* tablet */
+@media (min-width:460px){
+
+    /* banner */
+
+    .home__box-banner {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .home__box-banner img{
+        width: 100%;
+    }
+
+    /* products */
+    .home__box-products{
+        overflow: hidden;
+    }
+
+    .home__product {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(even){ /* a los pares le saco el margen derecho */
+        margin-right: 0;
+    }
+
+}
+
+
