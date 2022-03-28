@@ -6,3 +6,32 @@
     padding: 10px 0;  /* margen a las li */
     border-bottom: solid 2px white; /* borde inferiorde cada li */
   }
+
+
+  @media(min-width:768px){
+
+    .footer__menu{
+      background-color: var(--colorRojo);
+      width: 100%;
+      padding: 60px 0;
+      text-align: center;
+      border-radius: 20px 20px 0 0;
+    }
+
+
+    .footer__menu li {
+      width: 110px;
+      border-bottom: 0;
+      display: inline-block;
+      text-transform: capitalize;
+      border-right: solid 2px white;
+      padding: 7px 0;  /* margen a las li */
+    }
+  
+    .footer__menu li:last-child {
+     
+      border-right: none;
+      
+    }
+
+  }

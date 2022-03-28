@@ -88,4 +88,20 @@ left: 0px;
 
 }
 
+/* laptops */
+@media(min-width:768px){
 
+    .home__product {
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(even){ /* a los pares le saco el margen derecho */
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(3n){ /*cada 3 sacale el margen derecho */
+        margin-right: 0%;
+    }
+
+}
