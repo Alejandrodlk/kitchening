@@ -9,6 +9,8 @@ body.home {
 
 .home__box-products{
     margin: 30px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .home__product {
@@ -72,19 +74,18 @@ left: 0px;
     }
 
     /* products */
+
     .home__box-products{
-        overflow: hidden;
+    
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .home__product {
         width: 49%;
-        float: left;
-        margin-right: 2%;
     }
 
-    .home__product:nth-child(even){ /* a los pares le saco el margen derecho */
-        margin-right: 0;
-    }
 
 }
 
@@ -93,15 +94,6 @@ left: 0px;
 
     .home__product {
         width: 32%;
-        margin-right: 2%;
-    }
-
-    .home__product:nth-child(even){ /* a los pares le saco el margen derecho */
-        margin-right: 2%;
-    }
-
-    .home__product:nth-child(3n){ /*cada 3 sacale el margen derecho */
-        margin-right: 0%;
     }
 
 }
