@@ -1,5 +1,9 @@
 header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .header__logo {
@@ -7,26 +11,34 @@ header {
     border: solid 1px var(--colorGrisClaro); /* borde solido, grosor 1 px,  */
     width: 180px;
     height: 180px;
-    background-image: url("/images/logo.jpg");
-    background-position: center;
-    background-size: cover;
-    margin: 15px auto 30px;
+    margin: 30px 0;
 }
 
+
+
 .header__burger {
-  width: 50px;
-  padding: 5px; 
-  font-size: 32px;
   background-color: var(--colorGrisOscuro);
-  color: white;
   border: none;
   border-radius: 5px;
-  margin: 0 auto 30px;
-  display: block;
+  color: white;
+  font-size: 32px;
+  padding: 5px; 
+  width: 50px;
+  margin-bottom: 30px;
+ 
 } 
 
-.header__menu li {
+.header__menu {
+
   width: 100%;
+}
+
+.header__menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__menu li {
   background-color: var(--colorGrisOscuro);
   text-transform: uppercase; /* mayuscula a */
   text-align: center; /* centro las a */
@@ -42,21 +54,19 @@ header {
     display: none;
   } 
 
-  .header__menu ul{
-    overflow: hidden; /* darle un limite al float */
+  .header__menu ul {
+    flex-direction: row;
+    justify-content: space-between;
+
   }
 
   .header__menu li {
-    width: 15.5%;
     font-size: 0.6rem; /* medidas relativas */
-    float: left;
-    margin-right: 1.4%;
+    width: 15.5%;
+  
+
   }
 
-  .header__menu li:last-child{ /* sacar el margen al ultimo elemento "last-child" */
-    margin-right: 0;
-  }
-}
 
 
 /* Laptop */
@@ -65,5 +75,6 @@ header {
   .header__menu li {
     font-size: 1rem; /* medidas relativas */
   }
+}
 
 }
