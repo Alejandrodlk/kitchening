@@ -19,6 +19,19 @@ li {
     list-style: none;
 }
 
+.home__arrow__top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    font-size: 3rem;
+    
+}
+
+.home__arrow__top i:hover {
+    color: salmon;
+
+}
+
 /* img {
     width: 100%;
 } */

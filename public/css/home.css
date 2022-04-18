@@ -55,8 +55,7 @@ left: 0px;
     margin: 10px 0;
     text-align: center;
     width: 80px;
-    background-color: var(--colorGrisOscuro);
-    
+    background-color: var(--colorGrisOscuro);   
 }
 
 /* tablet */
@@ -67,6 +66,19 @@ left: 0px;
     .home__box-banner {
         display: block;
         margin-top: 30px;
+    }
+
+    .home__product__box-image:hover .home__product__image  {
+        transform: scale(1.2);
+        position: relative;
+        z-index: 10;
+        transition: all 1s;
+    }
+
+    .home__product__box-image:hover .home__product__sticker {
+        transform: translateX(30px) translateY(-22px) scale(1.2);
+        z-index: 10;
+        transition: transform 1s;
     }
 
     .home__box-banner img{
@@ -86,7 +98,12 @@ left: 0px;
         width: 49%;
     }
 
-
+    .home__product_more:hover {
+        transition: transform 5s;
+        transition:  background-color 1s;
+        transform: scale(1.3);
+        background-color: salmon;
+    }
 }
 
 /* laptops */
